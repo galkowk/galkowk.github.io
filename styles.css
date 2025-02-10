@@ -1,0 +1,65 @@
+/*@font-face {
+    font-family: 'MRSHFont';
+    src: url('mirshriftok.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+@keyframes blink {
+    0% { color: black; text-shadow: none;}
+    50% { color: #F2F2F2; text-shadow: 0 0 13px #ffffff17;}
+    100% { color: black; text-shadow: none;}
+}
+
+body {
+    user-select: none;
+    background-color:#F2F2F2;
+    /*font-family: 'MRSHFont', normal;*/
+    font-family: "Lucida Console", Monaco, monospace;
+    zoom: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+}
+
+h1 {text-align: center; font-size: 2rem; padding: 0; margin-bottom: 3%;}
+h2 {font-size: 1.75rem; text-align: center;}
+p {font-size: 1.35rem; margin: 0p; padding: 0; width: 80%;}
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    padding: 0px 0;
+    width: 100%;
+    color: gray;
+    background-color: #F2F2F2;
+    opacity: 92%;
+}
+
+.mail {width: 100%; font-size:medium; user-select: text;}
+
+/* player styles */
+.air {cursor: pointer; font-weight: 900;}
+.status {transition: color 0.3s;}
+.active {color: black;}
+.inactive {color: #F20519;}
+.blinking {animation: blink 1.2s infinite;}
+
+/* shedule styles */
+#scheduleContainer {
+    width: 100%;
+    margin-bottom: 13%;
+    font-size: 1.35rem;
+}
+
+.program-row {margin: 0; padding: 0 0 3% 0;}
+.program-row .name {background: #acacac; color: #F2F2F2}
+.program-row .time {color: #000000}
+.program-row .date {color: gray; font-style: italic}
+.program-row .accent {color: #F20519} 
+
+/* Ночной стиль */
+.night {background-color: #3e3e3e}
